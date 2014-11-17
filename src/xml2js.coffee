@@ -74,6 +74,7 @@ exports.defaults =
     renderOpts: { 'pretty': true, 'indent': '  ', 'newline': '\n' }
     headless: false
     chunkSize: 10000
+    closingTag: false
 
 class exports.ValidationError extends Error
   constructor: (message) ->
