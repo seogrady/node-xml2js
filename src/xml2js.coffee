@@ -137,7 +137,7 @@ class exports.Builder
       element
 
     rootElement = builder.create(rootName, @options.xmldec, @options.doctype,
-      headless: @options.headless)
+      headless: @options.headless, closingTag: @options.closingTag)
 
     render(rootElement, rootObj).end(@options.renderOpts)
 

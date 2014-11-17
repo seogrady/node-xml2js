@@ -47,7 +47,7 @@
   },
   "dependencies" : {
     "sax" : "0.6.x",
-    "xmlbuilder" : ">=1.0.0"
+    "xmlbuilder" : "seogrady/xmlbuilder-js"
   },
   "devDependencies" : {
     "coffee-script" : ">=1.7.1",
