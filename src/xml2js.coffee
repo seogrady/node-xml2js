@@ -71,7 +71,7 @@ exports.defaults =
     rootName: 'root'
     xmldec: {'version': '1.0', 'encoding': 'UTF-8', 'standalone': true}
     doctype: null
-    renderOpts: { 'pretty': true, 'indent': '  ', 'newline': '\n' }
+    renderOpts: { 'pretty': true, 'indent': '  ', 'newline': '\n',  'closingTag': false }
     headless: false
     chunkSize: 10000
     closingTag: false
@@ -138,7 +138,7 @@ class exports.Builder
       element
 
     rootElement = builder.create(rootName, @options.xmldec, @options.doctype,
-      headless: @options.headless, closingTag: @options.closingTag)
+      headless: @options.headless)
 
     render(rootElement, rootObj).end(@options.renderOpts)
 
